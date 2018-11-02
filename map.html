@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_9bb27694e08d4d98a1c5d306750b0b49 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_9bb27694e08d4d98a1c5d306750b0b49" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_9bb27694e08d4d98a1c5d306750b0b49 = L.map(
+        'map_9bb27694e08d4d98a1c5d306750b0b49', {
+        center: [-25.2744, 133.7751],
+        zoom: 4,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_ebc2d4c2a58f4021ae4e819b707e8851 = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_9bb27694e08d4d98a1c5d306750b0b49);
+    
+        var marker_e75c492841e346648e0258332e7ef476 = L.marker(
+            [-33.8607, 151.205],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_9bb27694e08d4d98a1c5d306750b0b49);
+        
+    
+            var popup_9a9be22d9f154dfab045e0ea6fdcecc0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f267b530bf0743909f6581eb4dd75af5 = $('<div id="html_f267b530bf0743909f6581eb4dd75af5" style="width: 100.0%; height: 100.0%;">SYDNEY (OBSERVATORY HILL)<br> <center>66062</center></div>')[0];
+                popup_9a9be22d9f154dfab045e0ea6fdcecc0.setContent(html_f267b530bf0743909f6581eb4dd75af5);
+            
+
+            marker_e75c492841e346648e0258332e7ef476.bindPopup(popup_9a9be22d9f154dfab045e0ea6fdcecc0)
+            ;
+
+            
+        
+    
+        var marker_ee8a88dbda674c21addde34a458f8c88 = L.marker(
+            [-37.6655, 144.8321],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_9bb27694e08d4d98a1c5d306750b0b49);
+        
+    
+            var popup_2adc1823afe0487ea393cfdc4283b683 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d68cb0980be64ec89693cc83e41bd859 = $('<div id="html_d68cb0980be64ec89693cc83e41bd859" style="width: 100.0%; height: 100.0%;">MELBOURNE AIRPORT<br> <center>86282</center></div>')[0];
+                popup_2adc1823afe0487ea393cfdc4283b683.setContent(html_d68cb0980be64ec89693cc83e41bd859);
+            
+
+            marker_ee8a88dbda674c21addde34a458f8c88.bindPopup(popup_2adc1823afe0487ea393cfdc4283b683)
+            ;
+
+            
+        
+    
+                var lat_lng_popup_579607aa0db9489688b6910a143d5e3d = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_579607aa0db9489688b6910a143d5e3d
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_9bb27694e08d4d98a1c5d306750b0b49);
+                    }
+                map_9bb27694e08d4d98a1c5d306750b0b49.on('click', latLngPop);
+            
+</script>
